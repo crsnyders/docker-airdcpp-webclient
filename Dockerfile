@@ -1,7 +1,8 @@
 FROM debian:stable-slim
 
 ARG version=2.3.0
-ARG dl_url=http://web-builds.airdcpp.net/stable/airdcpp_${version}_webui-${version}_64-bit_portable.tar.gz
+ARG arch=64-bit
+ARG dl_url=http://web-builds.airdcpp.net/stable/airdcpp_${version}_webui-${version}_${arch}_portable.tar.gz
 
 RUN installDeps=' \
         curl \
